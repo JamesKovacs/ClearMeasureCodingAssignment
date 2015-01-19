@@ -1,5 +1,5 @@
 ﻿using System;
-using CodingAssignment;
+using FizzBuzz;
 
 namespace FizzBuzzConsole
 {
@@ -7,9 +7,10 @@ namespace FizzBuzzConsole
     {
         static void Main()
         {
+            var fizzBuzzPrinter = new FizzBuzzPrinter();
             for(var i = 1; i <= 100; i++)
             {
-                Console.Write(FizzBuzzPrinter.Print(i));
+                Console.Write(fizzBuzzPrinter.Print(i));
                 Console.WriteLine();
             }
             Console.ReadLine();
